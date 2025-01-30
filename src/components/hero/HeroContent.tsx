@@ -1,48 +1,60 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Typed from 'typed.js';
 
 export function HeroContent() {
-  const el = useRef(null);
+  const titleEl = useRef(null);
+  const descriptionEl = useRef(null);
 
   useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ['Hi, I\'m A P Bhargav Ravi Teja^500', 'Full Stack Developer^1000', 'Problem Solver^1000', 'AI Enthusiast^1000','MERN Stack Developer^1000', 'AI&ML Developer^1000'],
+    const titleTyped = new Typed(titleEl.current, {
+      strings: ['Full Stack Developer', 'AI Enthusiast', 'Problem Solver'],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true
     });
 
+    const descriptionTyped = new Typed(descriptionEl.current, {
+      strings: ['Crafting digital experiences through clean code and innovative solutions. Specialized in modern web technologies and artificial intelligence.'],
+      typeSpeed: 30,
+      showCursor: false,
+      startDelay: 1000,
+    });
+
     return () => {
-      typed.destroy();
+      titleTyped.destroy();
+      descriptionTyped.destroy();
     };
   }, []);
 
   return (
-    <div className="relative">
-      <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-primary-dark/30 rounded-lg blur"></div>
-      <div className="relative bg-dark-lighter p-8 rounded-lg border border-primary/20">
-        <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-          <span ref={el}></span>
-        </h1>
-        <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-          I build exceptional digital experiences that make people's lives easier.
-        </p>
-        <div className="flex space-x-4">
-          <a
-            href="#projects"
-            className="group px-6 py-3 bg-primary text-dark font-semibold rounded-lg hover:bg-primary-dark transition-all duration-300 transform hover:translate-y-[-2px] hover:shadow-lg hover:shadow-primary/20 flex items-center"
-          >
-            View My Work
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-dark hover:border-transparent transition-all duration-300 transform hover:translate-y-[-2px] hover:shadow-lg hover:shadow-primary/20"
-          >
-            Contact Me
-          </a>
-        </div>
+    <div className="space-y-6">
+      <h1 className="text-4xl font-light tracking-wide">
+        Hi, I'm <span className="text-primary font-normal">A P Bhargav Ravi Teja</span>
+      </h1>
+      
+      <div className="h-12 font-mono">
+        <span ref={titleEl} className="text-xl text-primary-light" />
+      </div>
+      
+      <div className="text-gray-400 leading-relaxed max-w-lg min-h-[80px]">
+        <span ref={descriptionEl} />
+      </div>
+      
+      <div className="flex gap-4 pt-4">
+        <a
+          href="#projects"
+          className="px-6 py-3 bg-primary/90 hover:bg-primary text-dark font-medium rounded-lg transition-all duration-300 flex items-center gap-2 group"
+        >
+          View Work
+          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+        <a
+          href="#contact"
+          className="px-6 py-3 border border-primary/20 hover:border-primary/40 text-primary rounded-lg transition-all duration-300"
+        >
+          Get in Touch
+        </a>
       </div>
     </div>
   );
