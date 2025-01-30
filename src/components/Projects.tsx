@@ -3,7 +3,7 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'E-commerce Platform',
+    title: 'e-Commerce project',
     description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB.',
     image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000',
     github: 'https://github.com',
