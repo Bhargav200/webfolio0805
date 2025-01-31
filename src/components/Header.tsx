@@ -1,5 +1,5 @@
 import { Menu, Github, Linkedin, Mail } from 'lucide-react';
-import { SpaceLogo } from 'src/assets/apbrt-logo.png';   
+import { SpaceLogo } from'./SpaceLogo';   
 
 export function Header() {
   return (
