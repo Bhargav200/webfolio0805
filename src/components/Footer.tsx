@@ -1,7 +1,4 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
-import { SpaceLogo } from './SpaceLogo';
-
 export function Footer() {
   return (
     <footer className="bg-dark relative overflow-hidden">
@@ -13,22 +10,15 @@ export function Footer() {
       
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-8 md:mb-0">
-            <SpaceLogo />
-            <p className="text-gray-400 mt-4 font-mono">Building digital experiences</p>
-          </div>
-          
+          <div className="mb-8 md:mb-0"></div>
           <div className="flex flex-col items-center md:items-end">
-            <div className="flex space-x-6 mb-4">
-          
-      
-            </div>
+            <div className="flex space-x-6 mb-4"></div>
           </div>
         </div>
         
         <div className="border-t border-primary/10 mt-8 pt-8 text-center">
           <p className="text-gray-400 font-mono">
-            &copy; {new Date().getFullYear()} APBRT. All rights reserved.
+            &copy; {new Date().getFullYear()} BRT Portfolio. All rights reserved.
           </p>
         </div>
       </div>
