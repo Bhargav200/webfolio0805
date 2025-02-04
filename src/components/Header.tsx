@@ -1,12 +1,12 @@
 import { Menu, Github, Linkedin, Mail } from 'lucide-react';
-import { SpaceLogo } from'./SpaceLogo';   
+import { SpaceLogo } from './SpaceLogo'; // Ensure the path is correct
 
 export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-dark/80 backdrop-blur-sm z-50">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="apbrt-logo.png" className="hover:opacity-80 transition">
-          <SpaceLogo />
+        <a href="#home" className="hover:opacity-80 transition">
+          <SpaceLogo /> {/* This component should render the APBRT logo */}
         </a>
         <div className="hidden md:flex space-x-8">
           <a 
