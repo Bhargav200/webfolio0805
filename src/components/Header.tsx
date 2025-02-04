@@ -10,7 +10,7 @@ export function Header() {
         </a>
         <div className="hidden md:flex space-x-8">
           <a 
-            href="/src/assets/apbrt-logo.png" 
+            href="src/assets/apbrt-logo.png" 
             className="text-gray-300 hover:text-primary transition font-mono uppercase tracking-wider text-sm"
           >
             About
