@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-dark/80 backdrop-blur-sm z-50">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="/src/assets/apbrt-logo.png" className="hover:opacity-80 transition">
+        <a href="assests/apbrt-logo.png" className="hover:opacity-80 transition">
           <SpaceLogo />
         </a>
         <div className="hidden md:flex space-x-8">
