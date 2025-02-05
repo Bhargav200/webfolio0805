@@ -41,7 +41,16 @@ export function Header() {
           </a>
         </div>
         <div className="hidden md:flex space-x-4">
-         
+          <a href="https://github.com" className="text-gray-300 hover:text-primary transition">
+            <Github className="w-5 h-5" />
+          </a>
+          <a href="https://linkedin.com" className="text-gray-300 hover:text-primary transition">
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a href="mailto:john@example.com" className="text-gray-300 hover:text-primary transition">
+            <Mail className="w-5 h-5" />
+          </a>
+        </div>
         <button className="md:hidden text-primary">
           <Menu className="w-6 h-6" />
         </button>
