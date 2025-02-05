@@ -14,8 +14,8 @@ export function TechLogo({ name, logo, color }: TechLogoProps) {
     >
       <div className="relative w-12 h-12 mb-2">
         <img
-          src="/src/assets/apbrt-logo.png"
-          alt="BRT Logo" 
+          src={logo}
+          alt={name} 
           className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-300"
         />
         <div 
