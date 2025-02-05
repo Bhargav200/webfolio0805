@@ -6,7 +6,7 @@ export function SpaceLogo() {
       <img 
         src="https://raw.githubusercontent.com/apbrt/apbrt/main/logo.png"
         alt="APBRT Logo" 
-        className="h-12 w-auto hover:opacity-80 transition-opacity"
+        className="h-12 w-auto hover:opacity-60 transition-opacity"
       />
     </div>
   );
