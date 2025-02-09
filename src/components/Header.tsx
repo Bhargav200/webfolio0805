@@ -5,13 +5,31 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-dark/80 backdrop-blur-sm z-50">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#about" className="hover:opacity-80 transition">
-          <SpaceLogo /> 
-          <div> class= container
-          <a href="src/assets/apbrtlogo.png" className="hover:opacity-80 transition">{/* This component should render the APBRT logo */}
-        </a> 
+        {/* Left section with logos */}
+        <div className="flex items-center space-x-4">
+          {/* Clickable SpaceLogo */}
+          <a href="#about" className="hover:opacity-80 transition">
+            <SpaceLogo />
+          </a>
+
+          {/* Container for the APBRT logo */}
+          <div className="container">
+            <a
+              href="#home"
+              className="hover:opacity-80 transition"
+            >
+              {/* Replace this <img> with a component if needed */}
+              <img
+                src="src/assets/apbrtlogo.png"
+                alt="APBRT Logo"
+                className="w-auto h-8"
+              />
+            </a>
           </div>
-        <div className="hidden md:flex space-x-8">
+        </div>
+
+       
+
           <a 
             href="#about" 
             className="text-gray-300 hover:text-primary transition font-mono uppercase tracking-wider text-sm"
