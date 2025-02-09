@@ -7,8 +7,10 @@ export function Header() {
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#about" className="hover:opacity-80 transition">
           <SpaceLogo /> 
+          <div> class= container
           <a href="src/assets/apbrtlogo.png" className="hover:opacity-80 transition">{/* This component should render the APBRT logo */}
-        </a>
+        </a> 
+          </div>
         <div className="hidden md:flex space-x-8">
           <a 
             href="#about" 
