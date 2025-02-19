@@ -29,7 +29,7 @@ export function Header() {
         </div>
         
         {/* Navigation Links */}
-        <div className="flex space-x-4">
+        <div className="flex space-x-8"> {/* Increased spacing */}
           <a 
             href="#about" 
             className="text-gray-300 hover:text-primary transition font-mono uppercase tracking-wider text-sm"
