@@ -27,9 +27,9 @@ export function Header() {
             </a>
           </div>
         </div>
-
-       
-
+        
+        {/* Navigation Links */}
+        <div className="flex space-x-4">
           <a 
             href="#about" 
             className="text-gray-300 hover:text-primary transition font-mono uppercase tracking-wider text-sm"
@@ -62,17 +62,17 @@ export function Header() {
           </a>
         </div>
         <div className="hidden md:flex space-x-4">
-          <a href="https://github.com" className="text-gray-300 hover:text-primary transition">
+          <a href="https://github.com" className="text-gray-300 hover:text-primary transition" aria-label="GitHub">
             <Github className="w-5 h-5" />
           </a>
-          <a href="https://linkedin.com" className="text-gray-300 hover:text-primary transition">
+          <a href="https://linkedin.com" className="text-gray-300 hover:text-primary transition" aria-label="LinkedIn">
             <Linkedin className="w-5 h-5" />
           </a>
-          <a href="mailto:john@example.com" className="text-gray-300 hover:text-primary transition">
+          <a href="mailto:john@example.com" className="text-gray-300 hover:text-primary transition" aria-label="Email">
             <Mail className="w-5 h-5" />
           </a>
         </div>
-        <button className="md:hidden text-primary">
+        <button className="md:hidden text-primary" aria-label="Menu">
           <Menu className="w-6 h-6" />
         </button>
       </nav>
